@@ -17,8 +17,16 @@
         <label for="phone">Phone Number:</label><br>
         <input type="tel" id="phone" name="phone" required><br><br>
 
-        <label>Department:</label><br>
-        <input type="text" id="department" name="department" required><br><br>
+        <label for="department">Department:</label><br>
+        <select id="department" name="department" required>
+            <option value="">Select Department</option>
+            <option value="swe">SWE</option>
+            <option value="cse">CSE</option>
+            <option value="eee">EEE</option>
+            <option value="bba">BBA</option>
+            <option value="english">English</option>
+            <option value="law">Law</option>
+        </select><br><br>
 
         <label for="eventdate">Event Date:</label><br>
         <input type="date" id="eventdate" name="eventdate" required><br><br>
@@ -33,8 +41,10 @@
         <input type="checkbox" id="sports" name="category" value="Sports">
         <label for="sports">Sports</label><br><br>
 
-        <label>Time:</label><br>
-        </time><input for="time" id="start" name="start" "Start"> <input for="time" id="end" name="end" "End"><br><br>
+        <label for="start">Start Time:</label>
+        <input type="time" id="starttime" name="starttime" required>
+        <label for="end">End Time:</label>
+        <input type="time" id="endtime" name="endtime" required><br><br>
 
         <input type="submit" value="Submit">
         <input type="reset" value="Reset">
@@ -76,33 +86,57 @@
                 <td>03:00 PM</td>
                 <td>05:00 PM</td>
             </tr>
-            <tr>
-                <td>Friday</td>
-                <td colspan="2">No events on this day</td>
-            </tr>
         </table>
 
     </fieldset>
 
     <fieldset>
         <legend>Conference Room Information</legend>
-        <table border=".5" cellpadding="8" cellspacing="0" textarea="center">
+        <table border="1" cellpadding="8" cellspacing="0">
             <tr>
                 <th>Day</th>
                 <th>Building No.</th>
-                <th>Room No.</th>
                 <th>Start Time</th>
                 <th>End Time</th>
             </tr>
             <tr>
                 <td>Sunday</td>
                 <td>AB4</td>
-                <td>101</td>
                 <td>09:00 AM</td>
                 <td>11:00 AM</td>
             </tr>
-            <tr aria-rowspan="4">
-                <td><footer>No room available on Saturday</footer></td>
+            <tr>
+                <td>Monday</td>
+                <td>AB2</td>
+                <td>10:00 AM</td>
+                <td>12:00 PM</td>
+            </tr>
+            <tr>
+                <td>Tuesday</td>
+                <td>AB3</td>
+                <td>11:00 AM</td>
+                <td>01:00 PM</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>AB1</td>
+                <td>02:00 PM</td>
+                <td>04:00 PM</td>
+            </tr>
+            <tr>
+                <td>Thursday</td>
+                <td>AB4</td>
+                <td>03:00 PM</td>
+                <td>05:00 PM</td>
+            </tr>
+            <tr>
+                <td>Friday</td>
+                <td>AB2</td>
+                <td>09:00 AM</td>
+                <td>11:00 AM</td>
+            </tr>
+            <tr>
+                <td colspan="4" style="text-align: center;">* No room available on Saturday *</td>
             </tr>
         </table>
     </fieldset>
